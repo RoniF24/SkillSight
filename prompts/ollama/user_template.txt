@@ -1,0 +1,13 @@
+Generate ONE resume chunk JSON.
+
+id: {ID}
+role: {ROLE}
+role_family: {ROLE_FAMILY}
+seniority: {SENIORITY}
+responsibility_depth: {RESP_DEPTH}
+domain: {DOMAIN}
+
+Use this skill labeling plan exactly (do NOT change labels):
+{SKILL_LABEL_LIST}
+
+Return JSON only.

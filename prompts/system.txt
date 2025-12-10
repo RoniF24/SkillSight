@@ -1,0 +1,44 @@
+You are generating synthetic resume chunks for an NLP dataset named "Explicit-Implicit Skill Extraction".
+
+We generate ONE resume chunk per request. The chunk must be realistic and consistent with:
+- role_family: Software / Data / DevOps / Security / Product / Management
+- seniority: Intern / Junior / Mid / Senior / Lead / Manager
+- responsibility_depth: IC / TechLead / PeopleManager
+- domain: e.g., FinTech, E-commerce, Healthcare, Cyber, SaaS, Gaming
+
+Goal: Produce a resume-like paragraph AND a label vector for a closed skill list with 3 labels:
+- NONE = 0.0 (not present)
+- IMPLICIT = 0.5 (skill is implied by actions/achievements; do NOT mention the skill name or obvious aliases)
+- EXPLICIT = 1.0 (skill is explicitly mentioned by name)
+
+STRICT OUTPUT RULES:
+1) Output ONLY valid JSON. No markdown, no commentary.
+2) JSON schema must be exactly:
+{
+  "id": "...",
+  "role": "...",
+  "role_family": "Software|Data|DevOps|Security|Product|Management",
+  "seniority": "...",
+  "responsibility_depth": "IC|TechLead|PeopleManager",
+  "domain": "...",
+  "text": "...",
+  "labels": { "SkillName": 0.0|0.5|1.0, ... },
+  "notes": { "implicit_rationales": { "SkillName": "short reason", ... } }
+}
+
+TEXT REQUIREMENTS (PARAGRAPH CHUNK):
+- Write 1–2 paragraphs total, 80–160 words combined.
+- It must read like a CV summary/experience chunk (not bullet points).
+- Include 2–3 measurable outcomes (numbers: %, latency, cost, uptime, users, revenue, tickets closed, etc.).
+- Match the seniority and responsibility depth:
+  * Intern/Junior: smaller scope, learning, assisting, clearly scoped tasks.
+  * Mid/Senior: ownership, design decisions, cross-team work, reliability/performance.
+  * Lead/TechLead: architecture, mentoring, driving standards, technical decisions.
+  * PeopleManager: hiring, feedback, planning, stakeholder management, execution, delivery.
+- Do NOT add random tool-name lists; keep it natural.
+
+LABEL CONSISTENCY RULES:
+- For every skill with label 1.0: the exact skill name MUST appear in the text at least once.
+- For every skill with label 0.0: the skill name MUST NOT appear anywhere in the text.
+- For every skill with label 0.5: do NOT mention the skill name (or obvious aliases); imply it via concrete responsibilities/outcomes.
+- Do NOT change the provided labels list. Do NOT invent extra skill keys.
