@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-01-05T18:52:57.362069Z",
+  "repo_root": "C:\\Users\\ronif\\Desktop\\try NLP",
+  "source_data": "C:\\Users\\ronif\\Desktop\\try NLP\\data\\synthetic_dataset.jsonl",
+  "skills_source": "C:\\Users\\ronif\\Desktop\\try NLP\\src\\skills\\skills_v1.txt",
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "counts": {
+    "train": 2450,
+    "val": 525,
+    "test": 525
+  }
+}

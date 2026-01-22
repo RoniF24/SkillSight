@@ -1,0 +1,12 @@
+{
+  "precision_at_k": 0.6845079365079387,
+  "recall_at_k": 0.8389523809523822,
+  "f1_at_k": 0.7460333951762557,
+  "typed_correct_count": 3.7695238095238097,
+  "k": 5.523809523809524,
+  "gt_nonzero": 4.567619047619048,
+  "type_acc_on_intersection": 0.9989841269841271,
+  "type_support_on_intersection": 3.7733333333333334,
+  "name_intersection_count": 3.7733333333333334,
+  "exact_match_with_type": 0.047619047619047616
+}

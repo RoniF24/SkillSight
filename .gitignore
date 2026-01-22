@@ -1,18 +1,53 @@
-# Python
+# =========================
+# Python / venv / cache
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
 .venv/
 venv/
+ENV/
+env/
 
+# =========================
 # Jupyter / notebooks
+# =========================
 .ipynb_checkpoints/
 
-# OS / editors
+# =========================
+# OS / Editor
+# =========================
 .DS_Store
 Thumbs.db
 .vscode/
+.idea/
 
-# Data (keep local)
-data/raw/
-data/synthetic/
-data/processed
+# =========================
+# Logs / temp
+# =========================
+*.log
+install_log.txt
+
+# =========================
+# Large artifacts (do NOT commit)
+# =========================
+# Local downloaded / trained model weights
+trained onepass/
+trained pairwise/
+
+# If you ever create big checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# =========================
+# OPTIONAL: if you have very large datasets you don't want in git
+# (comment these out if you DO want to commit the datasets)
+# =========================
+# data/raw/
+# data/processed/
+# data/synthetic/
