@@ -1,0 +1,15 @@
+{
+  "typed_precision_at_k": 0.6594285714285745,
+  "typed_recall_at_k": 0.744444444444446,
+  "typed_f1_at_k": 0.6915680615680648,
+  "typed_correct_count": 3.297142857142857,
+  "type_acc_on_intersection": 0.9950476190476192,
+  "type_support_on_intersection": 3.316190476190476,
+  "precision_skills_only": 0.6632380952380984,
+  "recall_skills_only": 0.7476190476190493,
+  "f1_skills_only": 0.6950312650312684,
+  "k": 5.0,
+  "gt_nonzero": 4.567619047619048,
+  "exact_match_skills_only": 0.011428571428571429,
+  "exact_match_with_type": 0.011428571428571429
+}

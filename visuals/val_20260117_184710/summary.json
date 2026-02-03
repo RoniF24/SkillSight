@@ -1,0 +1,61 @@
+{
+  "repo_root": "C:\\Users\\ronif\\Desktop\\try NLP",
+  "trained_models_dir": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models",
+  "split": "val",
+  "items": [
+    {
+      "model_key": "pairwise",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\pairwise\\eval_results\\mean_metrics_val.json",
+      "metrics": {
+        "precision_at_k": 0.6845079365079387,
+        "recall_at_k": 0.8389523809523822,
+        "f1_at_k": 0.7460333951762557,
+        "typed_correct_count": 3.7695238095238097,
+        "k": 5.523809523809524,
+        "gt_nonzero": 4.567619047619048,
+        "type_acc_on_intersection": 0.9989841269841271,
+        "type_support_on_intersection": 3.7733333333333334,
+        "name_intersection_count": 3.7733333333333334,
+        "exact_match_with_type": 0.047619047619047616
+      }
+    },
+    {
+      "model_key": "onepass_seed43_ep3_baseline__VAL",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\one_pass\\eval_onepass\\seed43_ep3_baseline__VAL\\mean_metrics_val.json",
+      "metrics": {
+        "typed_precision_at_k": 0.6809523809523818,
+        "typed_recall_at_k": 0.6077777777777783,
+        "typed_f1_at_k": 0.6283967566824721,
+        "typed_correct_count": 2.6666666666666665,
+        "type_acc_on_intersection": 0.9457142857142865,
+        "type_support_on_intersection": 2.841904761904762,
+        "precision_skills_only": 0.7229523809523825,
+        "recall_skills_only": 0.6402539682539692,
+        "f1_skills_only": 0.6641800316086044,
+        "k": 4.0876190476190475,
+        "gt_nonzero": 4.567619047619048,
+        "exact_match_skills_only": 0.047619047619047616,
+        "exact_match_with_type": 0.045714285714285714
+      }
+    },
+    {
+      "model_key": "onepass_seed43_ep3_cw__VAL",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\one_pass\\eval_onepass\\seed43_ep3_cw__VAL\\mean_metrics_val.json",
+      "metrics": {
+        "typed_precision_at_k": 0.6594285714285745,
+        "typed_recall_at_k": 0.744444444444446,
+        "typed_f1_at_k": 0.6915680615680648,
+        "typed_correct_count": 3.297142857142857,
+        "type_acc_on_intersection": 0.9950476190476192,
+        "type_support_on_intersection": 3.316190476190476,
+        "precision_skills_only": 0.6632380952380984,
+        "recall_skills_only": 0.7476190476190493,
+        "f1_skills_only": 0.6950312650312684,
+        "k": 5.0,
+        "gt_nonzero": 4.567619047619048,
+        "exact_match_skills_only": 0.011428571428571429,
+        "exact_match_with_type": 0.011428571428571429
+      }
+    }
+  ]
+}

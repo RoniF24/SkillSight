@@ -1,0 +1,61 @@
+{
+  "repo_root": "C:\\Users\\ronif\\Desktop\\try NLP",
+  "trained_models_dir": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models",
+  "split": "test",
+  "items": [
+    {
+      "model_key": "pairwise",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\pairwise\\test_pairwise\\mean_metrics_test.json",
+      "metrics": {
+        "precision_at_k": 0.6784444444444465,
+        "recall_at_k": 0.8242539682539701,
+        "f1_at_k": 0.7373652167937917,
+        "typed_correct_count": 3.7523809523809524,
+        "k": 5.527619047619048,
+        "gt_nonzero": 4.613333333333333,
+        "type_acc_on_intersection": 0.9982857142857143,
+        "type_support_on_intersection": 3.76,
+        "name_intersection_count": 3.76,
+        "exact_match_with_type": 0.02857142857142857
+      }
+    },
+    {
+      "model_key": "onepass_seed43_ep3_baseline__TEST",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\one_pass\\test_onepass\\seed43_ep3_baseline__TEST\\mean_metrics_test.json",
+      "metrics": {
+        "typed_precision_at_k": 0.6654920634920644,
+        "typed_recall_at_k": 0.5997142857142855,
+        "typed_f1_at_k": 0.6163331271902712,
+        "typed_correct_count": 2.6552380952380954,
+        "type_acc_on_intersection": 0.935492063492064,
+        "type_support_on_intersection": 2.8476190476190477,
+        "precision_skills_only": 0.7105714285714302,
+        "recall_skills_only": 0.6359047619047627,
+        "f1_skills_only": 0.655478870336015,
+        "k": 4.158095238095238,
+        "gt_nonzero": 4.613333333333333,
+        "exact_match_skills_only": 0.030476190476190476,
+        "exact_match_with_type": 0.02666666666666667
+      }
+    },
+    {
+      "model_key": "onepass_seed43_ep3_cw__TEST",
+      "metrics_path": "C:\\Users\\ronif\\Desktop\\try NLP\\trained_models\\one_pass\\test_onepass\\seed43_ep3_cw__TEST\\mean_metrics_test.json",
+      "metrics": {
+        "typed_precision_at_k": 0.6552380952380978,
+        "typed_recall_at_k": 0.7302539682539703,
+        "typed_f1_at_k": 0.6836642616642645,
+        "typed_correct_count": 3.276190476190476,
+        "type_acc_on_intersection": 0.9924761904761904,
+        "type_support_on_intersection": 3.302857142857143,
+        "precision_skills_only": 0.6605714285714313,
+        "recall_skills_only": 0.7346984126984148,
+        "f1_skills_only": 0.6885127465127495,
+        "k": 5.0,
+        "gt_nonzero": 4.613333333333333,
+        "exact_match_skills_only": 0.015238095238095238,
+        "exact_match_with_type": 0.015238095238095238
+      }
+    }
+  ]
+}

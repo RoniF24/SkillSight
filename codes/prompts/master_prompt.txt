@@ -1,0 +1,41 @@
+You are writing ONE natural, human-sounding paragraph (around 80–150 words) describing a single work experience for a {SENIORITY} {ROLE_TITLE} in the {DOMAIN} space.
+
+Output ONLY the paragraph text. Do NOT output JSON, bullet points, headers, or extra formatting.
+
+Start the paragraph with this opener (copy verbatim):
+{OPENER}
+
+Tone: {TONE}
+
+Hard constraints:
+
+1. EXACTLY ONE paragraph, usually 80–150 words. Slightly shorter or longer is OK if it reads naturally.
+2. No lists. No quotes. No code blocks.
+
+Required explicit phrases:
+
+* You MUST include ALL required explicit phrases below, EXACTLY as written (copy/paste).
+* Include all explicit phrases somewhere in the paragraph. Prefer earlier in the paragraph, but keep the story natural.
+  {EXPLICIT_MUST_INCLUDE}
+
+Implicit skill requirements:
+
+* Read the instructions below carefully and follow them exactly.
+* Some lines may ask you to include specific anchor phrases; in those cases, copy the phrase(s) verbatim WITHOUT quotes.
+* Other lines may describe skills that should be shown implicitly in context, without naming the skill itself.
+  {IMPLICIT_REQUIREMENTS}
+
+Forbidden words/phrases:
+
+* You MUST NOT use ANY of the following words/phrases anywhere in the paragraph (case-insensitive, including plurals/variants).
+  {FORBIDDEN_WORDS}
+
+Additional guidance:
+
+* Make it read like a real incident/project story: what happened, what you did, and what changed as a result.
+* Show a clear impact. This can be a concrete metric (e.g., lower latency, fewer errors) OR a qualitative outcome (e.g., fewer incidents, quieter on-call, fewer complaints, less support load).
+* Vary your wording and any numbers you use; do NOT always use the same percentage patterns.
+* Keep it coherent and realistic for the role/domain.
+* Avoid mentioning skills that are not in the plan.
+
+{CORRECTION_BLOCK}

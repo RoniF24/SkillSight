@@ -1,0 +1,452 @@
+{
+  "version": "v1",
+  "bundles": [
+    {
+    "id": "backend_node_rest",
+    "role": "Backend",
+    "name": "Node.js REST APIs",
+    "must_have": ["Node.js", "REST API Design"],
+    "optional": [
+        "OpenAPI Specification",
+        "Caching",
+        "Rate Limiting",
+        "RabbitMQ",
+        "NATS",
+        "Microservices"
+    ],
+    "pick_one_of": [
+        ["Express.js", "NestJS"],
+        ["JWT", "OAuth 2.0"]
+    ]   
+ },
+    {
+    "id": "backend_java_spring_microservices",
+    "role": "Backend",
+    "name": "Java Spring Microservices",
+    "must_have": ["Java", "Spring Boot", "Microservices"],
+    "optional": [
+        "REST API Design",
+        "OpenAPI Specification",
+        "gRPC",
+        "Caching",
+        "Rate Limiting",
+        "RabbitMQ",
+        "Event-Driven Architecture",
+        "PostgreSQL"
+    ],
+    "pick_one_of": [["JWT", "OAuth 2.0"]]
+    },
+    {
+    "id": "backend_dotnet_rest",
+    "role": "Backend",
+    "name": ".NET REST Services",
+    "must_have": ["C#", "ASP.NET Core", "REST API Design"],
+    "optional": [
+        "OpenAPI Specification",
+        "PostgreSQL",
+        "Caching",
+        "Rate Limiting",
+        "RabbitMQ",
+        "Microservices"
+    ],
+    "pick_one_of": [["JWT", "OAuth 2.0"]]
+    },
+    {
+        "id": "backend_event_driven_services",
+        "role": "Backend",
+        "name": "Event-Driven Services",
+        "must_have": ["Event-Driven Architecture", "RabbitMQ", "Microservices"],
+        "optional": [
+            "Java",
+            "Spring Boot",
+            "Node.js",
+            "REST API Design",
+            "gRPC",
+            "PostgreSQL",
+            "Caching",
+            "Rate Limiting",
+            "NATS"
+    ]
+    },
+    {
+    "id": "data_warehouse_analytics",
+    "role": "Data",
+    "name": "Warehouse Analytics (dbt + Cloud DW)",
+    "must_have": ["SQL", "dbt", "Data Warehousing"],
+    "optional": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Data Modeling",
+        "Dimensional Modeling",
+        "Parquet",
+        "Avro",
+        "Apache Airflow"
+    ]
+    },
+    {
+    "id": "data_batch_pipelines",
+    "role": "Data",
+    "name": "Batch Pipelines (Airflow + Spark)",
+    "must_have": ["Apache Airflow", "Apache Spark", "Parquet"],
+    "optional": [
+        "SQL",
+        "Data Modeling",
+        "Data Warehousing",
+        "Avro",
+        "Delta Lake",
+        "Databricks",
+        "PostgreSQL",
+        "BigQuery"
+    ]
+    },
+    {
+    "id": "data_streaming",
+    "role": "Data",
+    "name": "Streaming Data (Kafka + Flink)",
+    "must_have": ["Apache Kafka", "Apache Flink", "Avro"],
+    "optional": [
+        "Apache Spark",
+        "Parquet",
+        "Data Warehousing",
+        "Elasticsearch",
+        "PostgreSQL",
+        "Databricks",
+        "Delta Lake",
+        "SQL"
+    ]
+    },
+    {
+    "id": "devops_containers_orchestration",
+    "role": "DevOps",
+    "name": "Containers & Orchestration",
+    "must_have": ["Docker", "Kubernetes", "Helm"],
+    "optional": [
+        "Linux",
+        "Nginx",
+        "Prometheus",
+        "Grafana",
+        "Argo CD",
+        "OpenTelemetry",
+        "Jaeger",
+        "Vault"
+    ]
+    },
+    {
+    "id": "devops_iac_automation",
+    "role": "DevOps",
+    "name": "IaC & Automation (Terraform + Ansible)",
+    "must_have": ["Terraform", "Ansible", "Linux"],
+    "optional": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Vault",
+        "Docker",
+        "Kubernetes",
+        "Nginx",
+        "Prometheus"
+    ]
+    },
+    {
+    "id": "devops_cicd_pipelines",
+    "role": "DevOps",
+    "name": "CI/CD Pipelines",
+    "must_have": ["GitHub Actions", "Jenkins", "Docker"],
+    "optional": [
+        "GitLab CI",
+        "CircleCI",
+        "Argo CD",
+        "Kubernetes",
+        "Terraform",
+        "OpenTelemetry",
+        "Prometheus"
+    ]
+    },
+    {
+    "id": "cyber_appsec_fundamentals",
+    "role": "Cyber",
+    "name": "AppSec Fundamentals",
+    "must_have": ["OWASP Top 10", "SAST", "Secure Code Review"],
+    "optional": [
+        "DAST",
+        "Threat Modeling",
+        "Vulnerability Scanning",
+        "OAuth 2.0",
+        "JWT",
+        "Encryption",
+        "TLS",
+        "Key Management"
+    ]
+    },
+    {
+    "id": "cyber_network_security_recon",
+    "role": "Cyber",
+    "name": "Network Security & Recon",
+    "must_have": ["Network Security", "Nmap", "Wireshark"],
+    "optional": [
+        "SIEM",
+        "Splunk",
+        "Incident Response",
+        "Vulnerability Scanning",
+        "TLS",
+        "PKI",
+        "Identity and Access Management",
+        "Multi-Factor Authentication"
+    ]
+    },
+    {
+    "id": "cyber_pentest_tooling",
+    "role": "Cyber",
+    "name": "Pentest Tooling",
+    "must_have": ["Penetration Testing", "Burp Suite", "Metasploit"],
+    "optional": [
+        "Nmap",
+        "OWASP Top 10",
+        "Vulnerability Scanning",
+        "CVE Analysis",
+        "Incident Response",
+        "Network Security",
+        "SAST",
+        "DAST"
+    ]
+    },
+    {
+    "id": "qa_ui_automation_playwright",
+    "role": "QA",
+    "name": "UI Automation (Playwright)",
+    "must_have": ["Playwright", "UI Testing", "Regression Testing"],
+    "optional": [
+        "JavaScript",
+        "TypeScript",
+        "API Testing",
+        "End-to-End Testing",
+        "Selenium",
+        "Cypress",
+        "Test Case Design",
+        "Smoke Testing"
+    ]
+    },
+    {
+    "id": "qa_api_contract_testing",
+    "role": "QA",
+    "name": "API & Contract Testing",
+    "must_have": ["API Testing", "Contract Testing", "Postman"],
+    "optional": [
+        "OpenAPI Specification",
+        "REST API Design",
+        "Integration Testing",
+        "Regression Testing",
+        "JWT",
+        "OAuth 2.0",
+        "Test Planning",
+        "Test Case Design"
+    ]
+    },
+    {
+    "id": "qa_performance_testing_jmeter",
+    "role": "QA",
+    "name": "Performance Testing (JMeter)",
+    "must_have": ["JMeter", "Performance Testing", "Load Testing"],
+    "optional": [
+        "Stress Testing",
+        "Regression Testing",
+        "API Testing",
+        "Postman",
+        "Grafana",
+        "Prometheus",
+        "Test Planning",
+        "Test Case Design"
+    ]
+    },
+    {
+    "id": "backend_python_fastapi",
+    "role": "Backend",
+    "name": "Python FastAPI Services",
+    "must_have": ["Python", "FastAPI", "REST API Design"],
+    "optional": [
+        "OpenAPI Specification",
+        "JWT",
+        "OAuth 2.0",
+        "PostgreSQL",
+        "Redis",
+        "Microservices",
+        "Rate Limiting",
+        "Docker"
+    ]
+    },
+    {
+    "id": "backend_python_django",
+    "role": "Backend",
+    "name": "Python Django Backend",
+    "must_have": ["Python", "Django", "PostgreSQL"],
+    "optional": [
+        "REST API Design",
+        "JWT",
+        "OAuth 2.0",
+        "Redis",
+        "Caching",
+        "Docker",
+        "Microservices",
+        "OpenAPI Specification"
+    ]
+    },
+    {
+    "id": "backend_go_gin",
+    "role": "Backend",
+    "name": "Go Gin Services",
+    "must_have": ["Go", "Gin (Go)", "REST API Design"],
+    "optional": [
+        "gRPC",
+        "PostgreSQL",
+        "Redis",
+        "Microservices",
+        "Rate Limiting",
+        "Docker",
+        "OpenAPI Specification"
+    ]
+    },
+    {
+    "id": "backend_rust_actix",
+    "role": "Backend",
+    "name": "Rust Actix Web Services",
+    "must_have": ["Rust", "Actix Web (Rust)", "REST API Design"],
+    "optional": [
+        "gRPC",
+        "PostgreSQL",
+        "Redis",
+        "Microservices",
+        "Rate Limiting",
+        "Docker"
+    ]
+    },
+    {
+    "id": "data_nosql_search",
+    "role": "Data",
+    "name": "NoSQL & Search Analytics",
+    "must_have": ["MongoDB", "Elasticsearch", "SQL"],
+    "optional": [
+        "Redis",
+        "Cassandra",
+        "PostgreSQL",
+        "Data Modeling",
+        "Parquet",
+        "Apache Spark"
+    ]
+    },
+    {
+    "id": "devops_observability_elk",
+    "role": "DevOps",
+    "name": "Observability (ELK + Tracing)",
+    "must_have": ["ELK Stack", "Prometheus", "Grafana"],
+    "optional": [
+        "OpenTelemetry",
+        "Jaeger",
+        "Kubernetes",
+        "Docker",
+        "Nginx",
+        "Linux"
+    ]
+    },
+    {
+    "id": "qa_unit_testing",
+    "role": "QA",
+    "name": "Unit Testing Practices",
+    "must_have": ["Unit Testing", "Regression Testing", "Test Case Design"],
+    "optional": [
+        "Automated Testing",
+        "Manual Testing",
+        "Integration Testing",
+        "API Testing",
+        "Postman",
+        "Smoke Testing"
+    ]
+    },
+    {
+    "id": "cyber_siem_incident_response",
+    "role": "Cyber",
+    "name": "SIEM & Incident Response",
+    "must_have": ["SIEM", "Incident Response", "Splunk"],
+    "optional": [
+        "Vulnerability Scanning",
+        "Network Security",
+        "TLS",
+        "PKI",
+        "Threat Modeling"
+    ]
+    },
+    {
+    "id": "backend_php_laravel",
+    "role": "Backend",
+    "name": "PHP Laravel Backend",
+    "must_have": ["PHP", "Laravel", "MySQL"],
+    "optional": ["REST API Design", "JWT", "OAuth 2.0", "Caching", "Docker", "OpenAPI Specification"]
+    },
+    {
+    "id": "backend_ruby_rails",
+    "role": "Backend",
+    "name": "Ruby on Rails Backend",
+    "must_have": ["Ruby", "Ruby on Rails", "SQLite"],
+    "optional": ["REST API Design", "JWT", "OAuth 2.0", "Caching", "Docker", "OpenAPI Specification", "PostgreSQL"]
+    },
+    {
+    "id": "backend_graphql_apis",
+    "role": "Backend",
+    "name": "GraphQL APIs",
+    "must_have": ["GraphQL", "Node.js", "JWT"],
+    "optional": ["OpenAPI Specification", "OAuth 2.0", "PostgreSQL", "Redis", "Microservices", "Rate Limiting"]
+    },
+    {
+    "id": "backend_python_flask",
+    "role": "Backend",
+    "name": "Python Flask Services",
+    "must_have": ["Python", "Flask", "REST API Design"],
+    "optional": ["PostgreSQL", "Redis", "JWT", "OAuth 2.0", "OpenAPI Specification", "Docker", "Microservices"]
+    },
+    {
+    "id": "data_timeseries_graph",
+    "role": "Data",
+    "name": "Time-Series & Graph Data",
+    "must_have": ["SQL"],
+    "optional": ["Data Modeling", "Apache Spark", "Elasticsearch", "PostgreSQL", "Avro", "Parquet"],
+    "pick_one_of": [["InfluxDB", "Neo4j"]]
+    },
+    {
+    "id": "data_analytics_scientific",
+    "role": "Data",
+    "name": "Analytics & Scientific Computing",
+    "must_have": ["SQL"],
+    "optional": ["Data Modeling", "Apache Spark", "Parquet", "BigQuery", "PostgreSQL"],
+    "pick_one_of": [["R", "Julia", "MATLAB"]]    
+    },
+    {
+    "id": "mobile_kotlin_swift",
+    "role": "Backend",
+    "name": "Mobile-Oriented Services (Kotlin/Swift)",
+    "must_have": ["Kotlin", "Swift", "REST API Design"],
+    "optional": ["PostgreSQL", "JWT", "OAuth 2.0", "OpenAPI Specification", "Microservices"]
+    },
+    {
+    "id": "devops_scripting_pulumi",
+    "role": "DevOps",
+    "name": "Scripting & Pulumi Automation",
+    "must_have": ["Bash", "PowerShell", "Pulumi"],
+    "optional": ["AWS", "Azure", "Google Cloud", "Linux", "Docker", "Terraform", "Lua", "Perl"]
+    },
+    {
+    "id": "backend_systems_performance",
+    "role": "Backend",
+    "name": "Systems & Performance Backend (C/C++)",
+    "must_have": ["C", "C++", "Linux"],
+    "optional": ["gRPC", "PostgreSQL", "Redis", "Microservices", "Docker", "Rate Limiting"]
+    },
+    {
+    "id": "backend_functional_concurrent",
+    "role": "Backend",
+    "name": "Functional & Concurrent Services",
+    "must_have": ["Microservices"],
+    "optional": ["RabbitMQ", "PostgreSQL", "Event-Driven Architecture", "REST API Design"],
+    "pick_one_of": [["Scala", "Haskell", "Elixir"]]
+    }
+  ]
+}
